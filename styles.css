@@ -46,21 +46,27 @@ body {
   width: 100%;
   height: 80%;
 }
-.card-container .social-links .btn {
+.card-container .social-links div {
   background-color: #333333;
   width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   border-radius: 8px;
-  color: hsl(0, 0%, 100%);
-  font-weight: 600;
   letter-spacing: 0.5px;
 }
 @media (max-width: 375px) {
-  .card-container .social-links .btn {
+  .card-container .social-links div {
     width: 250px;
   }
 }
-.card-container .social-links .btn:hover {
+.card-container .social-links div a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-decoration: none;
+}
+.card-container .social-links div:hover {
   background-color: #b8d551;
   cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

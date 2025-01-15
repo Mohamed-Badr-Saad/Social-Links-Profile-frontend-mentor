@@ -68,21 +68,27 @@ body {
         align-items: center;
         width: 100%;
         height: 80%;
-        .btn {
+        div {
             background-color: map.get($palette, grey700);
             width: 300px;
             @media (max-width: 375px) {
                 width: 250px;
                 // Adjust width for smaller screens
             }
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 50px;
             border-radius: 8px;
-            color: map.get($palette, white);
-            font-weight: map.get($font-weights, medium);
             letter-spacing: 0.5px;
+            a {
+                color: map.get($palette, white);
+                font-weight: map.get($font-weights, medium);
+                text-decoration: none;
+            }
         }
 
-        .btn:hover {
+        div:hover {
             background-color: map.get($palette, green);
             cursor: pointer;
         }
